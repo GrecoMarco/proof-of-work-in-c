@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/mario/Projects/proof_of_work",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/proof_of_work_test.dir/program.c.o   -c /Users/mario/Projects/proof_of_work/program.c",
+  "file": "/Users/mario/Projects/proof_of_work/program.c"
+},
+{
+  "directory": "/Users/mario/Projects/proof_of_work",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/proof_of_work_test.dir/sha256.c.o   -c /Users/mario/Projects/proof_of_work/sha256.c",
+  "file": "/Users/mario/Projects/proof_of_work/sha256.c"
+}
+]
