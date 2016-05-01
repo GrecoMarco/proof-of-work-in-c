@@ -113,6 +113,6 @@ int main(void) {
     if (ret == 0)
         printf("The work is proven\n");
     else
-        printf("This word is not proven\n");
+        printf("This work is not proven\n");
     return 0;
 }
