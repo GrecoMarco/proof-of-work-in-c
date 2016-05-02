@@ -90,7 +90,7 @@ struct Proof * work(const BYTE data[], size_t data_len, int32_t leadingZeros) {
         BYTE* hash = compute_sha256(buffer, sizeof(buffer) / sizeof(BYTE));
         int other_than_zero = 1;
         for (int i = leadingZeros; i > 0 && other_than_zero; i--) {
-            other_than_zero = 48 == hash[i]; // is this a "0"
+            other_than_zero = 0x00 == hash[i]; // is zeor_bit
         }
 
         if (other_than_zero)
@@ -108,7 +108,7 @@ struct Proof * work(const BYTE data[], size_t data_len, int32_t leadingZeros) {
 int main(void) {
     BYTE str[] = "abc";
     BYTE str2[] = "cba";
-    struct Proof* p = work(str, sizeof(str) / sizeof(BYTE), 3);
+    struct Proof* p = work(str, sizeof(str) / sizeof(BYTE), 1);
     int ret = verify(p, str, sizeof(str) / sizeof(BYTE));
     if (ret == 0)
         printf("The work is proven\n");
